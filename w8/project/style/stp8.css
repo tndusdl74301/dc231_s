@@ -18,17 +18,19 @@
 
 .nav__menuWrapper {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: baseline;
 }
 
 .button {
+  font: 1em sans-serif;
   width: -moz-fit-content;
   width: fit-content;
   background-color: black;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 16px 32px;
+  border-radius: 100px;
   color: white;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
@@ -39,19 +41,19 @@
 }
 
 .nav {
+  font: optional;
   background-color: black;
-  color: yellow;
   font-weight: 700;
 }
 .nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-block: 12px;
+  padding-block: 40px;
 }
 .nav__menuWrapper {
   display: flex;
-  gap: 24px;
+  gap: 50px;
   align-items: baseline;
 }
 
@@ -62,13 +64,26 @@
   margin-inline: auto;
 }
 #hero1 .main__text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+  text-align: center;
   margin-inline: auto;
   max-width: 600px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
+}
+#hero1 .main__text2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
 }
 #hero1 .main__media {
   aspect-ratio: 16/9;
-  background-color: aliceblue;
+  background-color: white;
+}
+#hero1 .main__media img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #hero1 h2 {
   margin-bottom: 16px;
