@@ -5,9 +5,8 @@
 }
 
 .wrapper {
-    
     color: black;
-    padding-block: 64px;
+    padding-block: 80px;
 }
 
 .container {
@@ -27,10 +26,10 @@
     font: 1em sans-serif;
     width: fit-content;
     background-color: black;
-    padding: 16px 32px;
-    border-radius: 100px;
-    color: white;
-    font-size: 18px;
+    padding: 30px 65px;
+    border-radius: 120px;
+    color: yellow;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
     &--type-text {
@@ -40,8 +39,8 @@
     }
 }
 .nav {
+    background-image: url(../img/cb.png);
     font: optional;
-    background-color: black;
     font-weight: 700;
     .wrapper {
         display: flex;
@@ -55,7 +54,33 @@
     align-items: baseline;
   }
 }
+.personal {
+    font: 1em sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.personal2 {
+    font: 1em sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: black;
+    padding: 15px 25px;
+    border-radius: 120px;
+}
+.logo1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800px;
+    background-color: yellow;
+    font-size: 30px;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
 #hero1 {
+    background-image: url(../img/cb.png);
     text-align: center;
     .button {
         margin-inline: auto;
@@ -86,9 +111,41 @@
         }
       }
       h2 {
-        margin-bottom: 16px;
+        margin-bottom: 80px;
       }
       p {
-        margin-bottom: 24px;
+        margin-bottom: 30px;
       }
     }
+
+#hero2 {
+    background-image: url(../img/cb.png);
+    .wrapper {
+        display: flex;
+        align-items: center;
+        $gap-val: 24px;
+        gap: $gap-val;
+        & > * {
+            flex: 1;
+            //width: calc((100% - $gap-val) / 2);
+        }
+    }
+    main {
+      &__text {
+        &__buttonWrapper {
+            display: flex;
+            gap: 16px;
+        }
+      }
+      &__media {
+        aspect-ratio: 4 / 3;
+      }
+    }
+    h2 {
+        margin-bottom: 16px;
+    }
+    p {
+        max-width: 40ch;
+        margin-bottom: 24px;
+    }
+}
