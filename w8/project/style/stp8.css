@@ -118,11 +118,20 @@
   margin-bottom: 80px;
 }
 #hero1 p {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 #hero2 {
   background-image: url(../img/cb.png);
+}
+#hero2 .last {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+#hero2 .lastimg {
+  aspect-ratio: 4/3;
 }
 #hero2 .wrapper {
   display: flex;
@@ -144,5 +153,5 @@
 }
 #hero2 p {
   max-width: 40ch;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=stp8.css.map */
