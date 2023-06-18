@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.section {
+  /* background-color: red; */
+}
+
 .container {
   /* background-color: green; */
   max-width: 1328px;
@@ -16,16 +20,10 @@
   padding-block: 64px;
 }
 
-.nav__menuWrapper {
-  display: flex;
-  gap: 24px;
-  align-items: baseline;
-}
-
 .button {
   width: -moz-fit-content;
   width: fit-content;
-  background-color: slateblue;
+  background-color: cornflowerblue;
   padding: 8px 16px;
   border-radius: 8px;
   color: white;
@@ -34,7 +32,7 @@
 }
 .button--type-text {
   background-color: unset;
-  color: slateblue;
+  color: cornflowerblue;
   padding-inline: 0;
 }
 
@@ -55,6 +53,10 @@
   align-items: baseline;
 }
 
+.main__media {
+  background-color: rgb(209, 233, 255);
+}
+
 #hero1 {
   text-align: center;
 }
@@ -68,11 +70,36 @@
 }
 #hero1 .main__media {
   aspect-ratio: 16/9;
-  background-color: aliceblue;
 }
 #hero1 h2 {
   margin-bottom: 16px;
 }
 #hero1 p {
   margin-bottom: 24px;
-}/*# sourceMappingURL=stp6.css.map */
+}
+
+#hero2 {
+  background-color: aliceblue;
+}
+#hero2 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#hero2 .wrapper > * {
+  flex: 1;
+}
+#hero2 .main__text__buttonWrapper {
+  display: flex;
+  gap: 16px;
+}
+#hero2 .main__media {
+  aspect-ratio: 4/3;
+}
+#hero2 h2 {
+  margin-bottom: 16px;
+}
+#hero2 p {
+  max-width: 40ch;
+  margin-bottom: 24px;
+}

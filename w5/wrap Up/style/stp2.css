@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topNav {
+    background-color: grey;
+    /* 나중에 지울것 */
+    min-height: 10px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topNav__logo {
+    height: 36px;
+  }
+  
+  .topNav__buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .topNav__button {
+    color: white;
+    text-transform: capitalize;
+  }
