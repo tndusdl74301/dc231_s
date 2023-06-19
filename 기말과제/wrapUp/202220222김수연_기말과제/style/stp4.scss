@@ -18,6 +18,24 @@ $accent: var(--accent);
   box-sizing: border-box;
 }
 
+h7{
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 30pt;
+}
+
+h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20pt;
+  padding-bottom: 500px;
+  color: grey;
+}
+
 
 body {
   margin: 0;

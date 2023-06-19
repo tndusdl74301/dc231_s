@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/stp4.css" />
     <script src="script/progressBar.js" defer></script>
+     <script src="js/intersectionObserver.js" defer></script>
     <!-- <script src="script/onClickBtn.js" defer></script> -->
     <!-- <script src="script/scrollReactBtn.js" defer></script> -->
     <script src="script/noHistoryScrollReactBtn.js" defer></script>
@@ -16,11 +17,11 @@
       <img class="topNav__logo" src="img/진격거로고.png" />
       <div class="topNav__buttons">
         <div class="topNav__button">
-          <a href="http://bing.com"><div class="logo1">줄거리</div></a>
+        <h7><a href="http://bing.com"><div class="logo1">줄거리</div></a></h7>
         </div>
-        <div class="topNav__button"><a href="http://bing.com">인물소개</a></div>
-        <div class="topNav__button"><a href="http://bing.com">OST</a></div>
-        
+        <h7><div class="topNav__button"><a href="http://bing.com">인물소개</a></div></h7>
+        <h7><div class="topNav__button"><a href="http://bing.com">OST</a></div></h7>
+
       </div>
     </div>
   </body>
@@ -29,9 +30,10 @@
   <body>
     <header>
        <p1>
-      <img src="img/진격의거인표지그림.jpg" alt="">
-      </p1>>
+      <img src="img/진격의거인표지그림.jpg" alt="animTarget">
+      </p1>
       <div class="wrapper"></div>
+      <img src="img/진격거로고.png">
       <h1>진격의 거인 1기 줄거리(1-13화)</h1>
     </div>
   </header>
@@ -39,15 +41,18 @@
       <main>
         <section id="section1">
           <div class="wrapper">
-            <img src="img/Preview.jpg" alt="">
+            <img src="img/Preview.jpg" alt="animTarget">
             <h2>1화, 2천년 후의 너에게-시간시나 함락1</h2>
-            <h2>
-              "그 날, 인류는 떠올렸다. 놈들에게 지배당하던 공포를. 새장 안에 갇혀있던 굴욕을."</h2>
+         <section id="s1" class="animTrigger">
+          <div class="wrapper">
+           <div class="content animTarget">
+            <h3>"그 날, 인류는 떠올렸다. 놈들에게 지배당하던 공포를. 새장 안에 갇혀있던 굴욕을."</h3>
             <a href="https://namu.wiki/w/%EC%A7%84%EA%B2%A9%EC%9D%98%20%EA%B1%B0%EC%9D%B8(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%201%EA%B8%B0)">
-            <li>[더보기]</li>
-          
+            </div>
+          </div>
+        </section>
+              <li>[더보기]</li>
             </a>
-          
           </div>
         </section>
         <section id="section2">
@@ -193,43 +198,43 @@
         <h2 class="hide">links to each pages</h2>
         <ol>
           <a href="#section1">
-            <li>1화</li>
+            <li>#1</li>
           </a>
           <a href="#section2">
-            <li>2화</li>
+            <li>#2</li>
           </a>
           <a href="#section3">
-            <li>3화</li>
+            <li>#3</li>
           </a>
           <a href="#section4">
-            <li>4화</li>
+            <li>#4</li>
           </a>
           <a href="#section5">
-            <li>5화</li>
+            <li>#5</li>
           </a>
           <a href="#section6">
-            <li>6화</li>
+            <li>#6</li>
           </a>
           <a href="#section7">
-            <li>7화</li>
+            <li>#7</li>
           </a>
           <a href="#section8">
-            <li>8화</li>
+            <li>#8</li>
           </a>
           <a href="#section9">
-            <li>9화</li>
+            <li>#9</li>
           </a>
           <a href="#section10">
-            <li>10화</li>
+            <li>#10</li>
           </a>
           <a href="#section11">
-            <li>11화</li>
+            <li>#11</li>
           </a>
           <a href="#section12">
-            <li>12화</li>
+            <li>#12</li>
           </a>
           <a href="#section13">
-            <li>13화</li>
+            <li>#13</li>
           </a>
           </a>
         </ol>

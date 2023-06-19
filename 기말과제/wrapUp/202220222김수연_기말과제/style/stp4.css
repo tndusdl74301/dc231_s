@@ -6,6 +6,25 @@
   box-sizing: border-box;
 }
 
+h7 {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 30pt;
+  text-align: center;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20pt;
+  padding-bottom: 500px;
+  color: grey;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +32,7 @@ body {
 
 .topNav {
   background-image: url();
-    background-color: rgb(130, 0, 0);
+  background-color: rgb(130, 0, 0);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -29,11 +48,13 @@ body {
 .topNav__logo {
   /* width: 200px; */
   height: 50px;
+  padding-inline: 1.875rem;
 }
 
 .topNav__buttons {
   display: flex;
   gap: 16px;
+  padding-inline: 30px;
 }
 
 img {
