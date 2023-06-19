@@ -18,6 +18,44 @@ $accent: var(--accent);
   box-sizing: border-box;
 }
 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topNav {
+  background-image: url();
+  background-color: rgb(130, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+
+
+.topNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.topNav__logo {
+  /* width: 200px; */
+  height: 50px;
+}
+
+.topNav__buttons {
+  display: flex;
+  gap: 16px;
+  
+}
+
+img {
+object-fit: cover;
+}
+
 .hide {
   display: none;
 }
