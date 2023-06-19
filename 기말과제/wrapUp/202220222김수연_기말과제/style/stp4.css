@@ -15,7 +15,6 @@ h3 {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 30pt;
-  text-align: center;
 }
 
 h1 {
@@ -48,13 +47,11 @@ body {
 .topNav__logo {
   /* width: 200px; */
   height: 50px;
-  padding-inline: 1.875rem;
 }
 
 .topNav__buttons {
   display: flex;
   gap: 16px;
-  padding-inline: 30px;
 }
 
 img {
@@ -193,10 +190,77 @@ aside a {
   inset: 0;
 }
 
+@media (width < 61rem) {
+  .wrapper {
+    display: block;
+    text-align: center;
+  }
+  .wrapper P {
+    margin-inline: auto;
+  }
+  .main__text {
+    margin-bottom: 2.25rem;
+  }
+  .main__text__buttonWrapper {
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+.main__text {
+  margin-inline: auto;
+}
+
 footer .wrapper {
   min-height: max(100dvh, 2rem);
 }
 
+.footer {
+  background-color: rgb(52, 52, 52);
+  color: rgb(112, 112, 112);
+  font-size: 0.875rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer svg {
+  fill: white;
+}
+
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.footer h2 {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__logo {
+  margin-bottom: 0.75rem;
+}
+
+.footer__extLinkWrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 0.5rem;
+} 
 @media (width < 67.5rem) {
   .stickyWrapper {
     grid-template-columns: 1fr;

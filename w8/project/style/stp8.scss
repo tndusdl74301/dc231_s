@@ -158,5 +158,69 @@
         max-width: 40ch;
         margin-bottom: 20px;
     }
-    
+
+    @media (width < 51rem) {
+        .wrapper {
+            display: block;
+            text-align: center;
+            P {
+              margin-inline: auto;
+            }
+          }
+          .main {
+            &__text{
+              margin-bottom: 2.25rem;
+              &__buttonWrapper{
+                margin-inline: auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+              }
+            }
+          }
+        }
+
+    .footer {
+    background-color: gray;
+    color: white;
+    font-size: 0.875rem;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      list-style: none;
+    }
+    svg {
+      fill: rgb(161, 161, 161);
+    }
+    .wrapper {
+      // display: flex;
+      // justify-content: space-between;
+      // gap: 24px;
+      // > * {
+      //   flex: 1;
+      // }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    &__logo {
+      margin-bottom: 0.75rem;
+    }
+    &__extLinkWrap {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+  }
 }

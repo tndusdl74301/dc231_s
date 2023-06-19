@@ -154,4 +154,59 @@
 #hero2 p {
   max-width: 40ch;
   margin-bottom: 20px;
+}
+@media (width < 51rem) {
+  #hero2 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #hero2 .wrapper P {
+    margin-inline: auto;
+  }
+  #hero2 .main__text {
+    margin-bottom: 2.25rem;
+  }
+  #hero2 .main__text__buttonWrapper {
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+#hero2 .footer {
+  background-color: gray;
+  color: white;
+  font-size: 0.875rem;
+}
+#hero2 .footer a {
+  text-decoration: none;
+  color: white;
+}
+#hero2 .footer li {
+  list-style: none;
+}
+#hero2 .footer svg {
+  fill: rgb(161, 161, 161);
+}
+#hero2 .footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+#hero2 .footer h2 {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+#hero2 .footer li {
+  margin-bottom: 0.5rem;
+}
+#hero2 .footer__logo {
+  margin-bottom: 0.75rem;
+}
+#hero2 .footer__extLinkWrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=stp8.css.map */

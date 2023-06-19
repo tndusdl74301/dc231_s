@@ -212,12 +212,75 @@ aside {
     inset: 0;
   }
 }
+@media (width < 61rem) {
+  .wrapper {
+      display: block;
+      text-align: center;
+      P {
+        margin-inline: auto;
+      }
+    }
+    .main {
+      &__text{
+        margin-bottom: 2.25rem;
+        &__buttonWrapper{
+          margin-inline: auto;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+        }
+      }
+    }
+  }
 
+.main {
+  &__text{
+    margin-inline: auto;
+  }
+}
 footer {
   .wrapper {
     min-height: max(100dvh, $min-height);
   }
 }
+
+.footer {
+  background-color: rgb(52, 52, 52);
+  color: rgb(112, 112, 112);
+  font-size: 0.875rem;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.footer li {
+  list-style: none;
+}
+.footer svg {
+  fill: white;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.footer h2 {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer__logo {
+  margin-bottom: 0.75rem;
+}
+.footer__extLinkWrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=stp1.css.map */
 
 @media (width < 67.5rem) {
   .stickyWrapper {
