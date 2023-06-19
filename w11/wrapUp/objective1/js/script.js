@@ -7,9 +7,3 @@ aCard.onclick = (e) => {
     "card-selected"
   );
 };
-
-// let elem = document.getElementById("card1");
-// elem.onclick = () => {
-//   elem.classList.toggle("card-selected");
-// };
-// elem.onclick = function () {}

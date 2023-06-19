@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <title>W11-WrapUp-stp3</title>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <h2>로띠 예제</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>로띠 기본</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <lottie-player
+          id="lottie1"
+          class="lottie"
+          src="https://assets5.lottiefiles.com/packages/lf20_rMdJsWnnko.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>로띠 호버</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <lottie-player
+          id="lottie2"
+          class="lottie"
+          src="https://assets5.lottiefiles.com/packages/lf20_rMdJsWnnko.json"
+          background="transparent"
+          speed="1"
+          hover
+          loop
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>로띠 고급: 스크롤</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <lottie-player
+          id="lottie3"
+          class="lottie"
+          src="https://assets5.lottiefiles.com/packages/lf20_rMdJsWnnko.json"
+          >"></lottie-player
+        >
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>로띠 고급: 클릭</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <lottie-player
+          id="lottie4"
+          class="lottie"
+          src="https://assets5.lottiefiles.com/packages/lf20_rMdJsWnnko.json"
+          >"></lottie-player
+        >
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>끗</h2>
+      </div>
+    </div>
+  </body>
+  <script>
+    LottieInteractivity.create({
+      mode: "scroll",
+      player: "#lottie3",
+      actions: [
+        {
+          visibility: [0, 1],
+          type: "seek",
+          frames: [0, 120],
+        },
+      ],
+    });
+    LottieInteractivity.create({
+      player: "#lottie4",
+      mode: "cursor",
+      actions: [
+        {
+          type: "click",
+          forceFlag: false,
+        },
+      ],
+    });
+  </script>
+</html>
